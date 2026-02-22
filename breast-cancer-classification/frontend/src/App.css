@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.btn-benign { background-color: #27ae60; color: white; }
+.btn-benign:hover { background-color: #219653; }
+
+.btn-malignant { background-color: #e74c3c; color: white; }
+.btn-malignant:hover { background-color: #c0392b; }
+
+.btn-clear { background-color: #95a5a6; color: white; }
+.btn-clear:hover { background-color: #7f8c8d; }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 30 kutuyu harika bir grid (ızgara) sistemine diziyoruz */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccd1d9;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #3498db;
+}
+
+.btn-submit {
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.btn-submit:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.btn-submit:hover:not(:disabled) { background-color: #2980b9; }
+
+.error-box {
+  background-color: #ffeaa7;
+  color: #d63031;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-safe {
+  background-color: #e8f8f5;
+  border: 2px solid #27ae60;
+  color: #27ae60;
+}
+
+.result-danger {
+  background-color: #fadbd8;
+  border: 2px solid #e74c3c;
+  color: #c0392b;
+}
