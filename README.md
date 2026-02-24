@@ -10,9 +10,3 @@ Bu proje, Scikit-learn içerisinde bulunan **Breast Cancer Wisconsin** veri küm
 ## 📊 Model Performansı
 Model 100 epoch boyunca eğitilmiş olup, eğitim süreci sonunda elde edilen kayıp (loss) ve doğruluk (accuracy) grafikleri notebook içerisinde mevcuttur. 
 
-## 🛠️ Kurulum ve Çalıştırma
-Projeyi yerel makinenizde çalıştırmak için:
-
-1. Bu depoyu klonlayın:
-   ```bash
-   git clone [https://github.com/kullanici-adiniz/proje-adi.git](https://github.com/kullanici-adiniz/proje-adi.git)
